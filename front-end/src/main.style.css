@@ -1,0 +1,23 @@
+:root {
+  color: #F7ECE1;
+  background-color: #9799e6;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
