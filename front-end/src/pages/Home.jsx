@@ -1,12 +1,15 @@
 import { useContext, useEffect, useState } from 'react';
-import { CompaniesTable } from '../components';
-import { HomeContainer, HomeTitle, TableWrapper } from './Home.style';
+
+import { getCompanies, insertCompany, removeCompany, updateCompany } from '../api/companies.service';
 
 import { Button } from '@mui/material';
-import { GlobalContext } from '../contexts/Global.context';
-import { InsertCompanyModal } from '../modals/InsertCompany/InsertCompany';
-import { getCompanies, insertCompany, removeCompany, updateCompany } from '../api/companies.service';
 import { toast } from 'react-toastify';
+
+import { GlobalContext } from '../contexts/Global.context';
+
+import { CompaniesTable } from '../components';
+import { InsertCompanyModal } from '../modals/InsertCompany/InsertCompany';
+import { HomeContainer, HomeTitle, TableWrapper } from './Home.style';
 
 export default function () {
   const { openModal } = useContext(GlobalContext);

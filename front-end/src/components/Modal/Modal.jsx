@@ -1,5 +1,7 @@
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material';
 import { useContext } from 'react';
+
+import { Button, Dialog, DialogActions, DialogTitle } from '@mui/material';
+
 import { GlobalContext } from '../../contexts/Global.context';
 
 export function Modal({

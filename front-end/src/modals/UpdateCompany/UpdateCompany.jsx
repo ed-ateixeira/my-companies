@@ -1,10 +1,14 @@
 import { useContext, useEffect, useRef, useState } from 'react';
+
+import { getCompanyById } from '../../api/companies.service';
+
+import { FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
+import { toast } from 'react-toastify';
+
+import { GlobalContext } from '../../contexts/Global.context';
+
 import { Modal } from '../../components';
 import { CompanyFormContainer } from './UpdateCompany.style';
-import { FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
-import { GlobalContext } from '../../contexts/Global.context';
-import { toast } from 'react-toastify';
-import { getCompanyById } from '../../api/companies.service';
 
 export function UpdateCompanyModal({ companyId, handleUpdateCompany }) {
   const { closeModal } = useContext(GlobalContext)

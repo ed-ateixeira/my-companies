@@ -1,9 +1,6 @@
-import { useCallback, useContext, useEffect, useState } from 'react';
+import { useCallback, useContext } from 'react';
 
 import Swal from 'sweetalert2';
-import { toast } from 'react-toastify';
-
-import { getCompanies } from '../../api/companies.service';
 
 import {
   Table,

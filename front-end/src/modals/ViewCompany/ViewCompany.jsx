@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
+
 import { getCompanyById } from '../../api/companies.service';
+
 import { Modal } from '../../components';
 import { CompanyInfosContainer } from './ViewCompany.style';
 

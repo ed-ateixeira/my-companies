@@ -1,9 +1,12 @@
 import { useContext, useRef } from 'react';
+
+import { FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
+import { toast } from 'react-toastify';
+
+import { GlobalContext } from '../../contexts/Global.context';
+
 import { Modal } from '../../components';
 import { CompanyFormContainer } from './InsertCompany.style';
-import { FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
-import { GlobalContext } from '../../contexts/Global.context';
-import { toast } from 'react-toastify';
 
 export function InsertCompanyModal({ handleInsertCompany }) {
   const { closeModal } = useContext(GlobalContext)
